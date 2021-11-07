@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt';
+}
+.navbar{
+    background-color: #fff;
+    color:#000;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Prompt';
+}
+.navbar a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Prompt';
+    color:#000;
+    font-weight: bold;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+.navbar ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover{
+    color: rgb(150, 150, 150);
+    transition: 0.5s;
+}
+body{
+    background-color: #fff;
+    font-family: 'prompt';
+}
+h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+p {
+    font-weight: 100;
+}
+.header {
+    margin-top: 5%;
+    padding: 50px 100px;
+}
+.header .content{
+    font-family: 'Prompt';
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.header p{
+    margin-top: 10px;
+    font-weight: 100;
+}
+.header{
+    display: block;
+}
+.header .content {
+    display: block;
+}
+.header .btn-sp {
+    margin-top: 20px;
+    background-color: #d8d8d8;
+    color: #000;
+    cursor: pointer;
+    padding: 10px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-family: 'Prompt';
+    font-weight: 500;
+    transition: 0.5s;
+}
+.btn-sp:hover{
+    background: #000;
+    color: #d8d8d8;
+    transition: 0.5s;
+}
+.post {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px 100px;
+}
+
+.post img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s;
+}
+.post img:hover {
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.post a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+.post a:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+
+}
+.post a h2 {
+    font-size: 20px;
+}
+footer{
+    background-color: #fff;
+    color:#000;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    left: 0;
+    bottom: 0;
+    font-family: 'Prompt';
+    font-weight: 100;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 0px;
+}
+footer ul li a{
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    color: rgb(100, 100, 100);
+    transition: 0.5s;
+}
+
