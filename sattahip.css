@@ -2,19 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Prompt';
+}
+html {
+    scroll-behavior: smooth;
+    font-size: calc(60% + 0.8vmin);
 }
 .navbar{
     background-color: #fff;
     color:#000;
     width: 100%;
-    line-height: 80px;
-    height: 80px;
-    font-size: 18px;
-    padding: 0 30px;
-    position: absolute;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
     top: 0;
     left: 0;
+    display: inline-block;
     font-family: 'Prompt';
 }
 .navbar a{
@@ -25,8 +27,8 @@
     float: left;
     height: inherit;
     line-height: inherit;
-    padding: 0 30px;
-    font-size: 40px;
+    padding: 0 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Prompt';
@@ -41,7 +43,6 @@
     list-style: none;
     height: inherit;
     line-height: inherit;
-    padding: 0 50px;
 }
 .navbar ul li a{
     display: block;
@@ -54,16 +55,27 @@
     color: rgb(150, 150, 150);
     transition: 0.5s;
 }
+@media only screen and (max-width: 480px) {
+    .navbar ul {
+        float: left;
+    }
+    .navbar ul li {
+        display: block;
+    }
+    .navbar ul li a {
+        text-align: left;
+    }
+}
 body{
     background-color: #fff;
     font-family: 'prompt';
 }
 h1{
-    font-size: 70px;
+    font-size: 4rem;
     font-weight: 500;
 }
 h2{
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 500;
 }
 p {
@@ -71,7 +83,7 @@ p {
 }
 .header {
     margin-top: 5%;
-    padding: 50px 100px;
+    padding: 0 10%;
 }
 .header .content{
     font-family: 'Prompt';
@@ -91,15 +103,15 @@ p {
     display: block;
 }
 .header .btn-sp {
-    margin-top: 20px;
+    margin-top: 1rem;
     background-color: #d8d8d8;
     color: #000;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 1rem 1.5rem;
     float: left;
     border: 0;
     border-radius: 20px;
-    margin-left: 10px;
+    margin-left: 1rem;
     font-family: 'Prompt';
     font-weight: 500;
     transition: 0.5s;
@@ -110,18 +122,19 @@ p {
     transition: 0.5s;
 }
 .post {
+    clear: both;
     margin-top: 5%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    padding: 50px 100px;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    padding: 3rem 3rem;
 }
 
 .post img {
     object-fit: cover;
-    width: 250px;
-    height: 250px;
+    width: 15rem;
+    height: 15rem;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s;
@@ -141,7 +154,16 @@ p {
 
 }
 .post a h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+    .post {
+        grid-template-columns: 1fr 1fr;
+    }
+    .post img {
+        width: 10rem;
+        height: 10rem;
+    }
 }
 footer{
     background-color: #fff;
@@ -180,5 +202,72 @@ footer ul li a{
 footer ul li a:hover{
     color: rgb(100, 100, 100);
     transition: 0.5s;
+}
+footer{
+    background-color: #fff;
+    color:#000;
+    width: 100%;
+    line-height: 5rem;
+    height: 5rem;
+    font-size: 1rem;
+    padding: 0 2rem;
+    left: 0;
+    bottom: 0;
+    font-family: 'Prompt';
+    font-weight: 100;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 0px;
+}
+footer ul li a{
+    display: block;
+    text-align: center;
+    min-width: 2rem;
+    padding-left: 1rem;
+    transition: 0.5s;
+}
+footer ul li a:hover{
+    color: rgb(100, 100, 100);
+    transition: 0.5s;
+}
+@media only screen and (max-width: 600px) {
+    footer a {
+        display: block;
+    }
+    footer ul {
+        float: left;
+    }
+    footer ul li a{
+        text-align: left;
+    }
+}
+#backToTop {
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #000;
+    color: #d8d8d8;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-family: 'Prompt';
+    transition: 0.3s;
+}
+#backToTop:hover {
+    transition: 0.3s;
+    background-color: #d8d8d8;
+    color: #000;
 }
 
