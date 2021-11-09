@@ -7,63 +7,53 @@ html {
     scroll-behavior: smooth;
     font-size: calc(60% + 0.8vmin);
 }
-.navbar{
-    background-color: #fff;
-    color:#000;
-    width: 100%;
-    line-height: 5rem;
-    font-size: 1.5rem;
-    padding: 0 1rem;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    font-family: 'Prompt';
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 2rem;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
 }
-.navbar a{
-    text-decoration: none;
-    color: #000;
+.logo {
+
 }
-.navbar a.nav-logo{
-    float: left;
-    height: inherit;
-    line-height: inherit;
-    padding: 0 2rem;
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Prompt';
-    color:#000;
-    font-weight: bold;
+.search {
+    text-align: center;
+    font-size: 2rem;
 }
-.navbar ul li{
-    display: inline-block;
+.search input {
+    width: 60%;
 }
-.navbar ul{
+.navbar ul {
     float: right;
-    list-style: none;
-    height: inherit;
-    line-height: inherit;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-right: 2rem;
 }
 .navbar ul li a{
-    display: block;
-    text-align: center;
-    min-width: 120px;
-    padding: 0 30px;
-    transition: 0.5s;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
 }
-.navbar ul li a:hover{
-    color: rgb(150, 150, 150);
-    transition: 0.5s;
-}
-@media only screen and (max-width: 480px) {
-    .navbar ul {
-        float: left;
+@media only screen and (max-width: 900px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    .navbar ul li {
-        display: block;
+    .logo {
+        text-align: center;
     }
-    .navbar ul li a {
-        text-align: left;
+    .menu ul{
+        float: none;
+        text-align: center;
+    }
+    .menu ul li {
+        margin: 2rem 1rem;
+    }
+    .menu ul li a {
+        text-align: center;
     }
 }
 body{
@@ -83,7 +73,9 @@ p {
 }
 .header {
     margin-top: 5%;
-    padding: 0 10%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
 }
 .header .content{
     font-family: 'Prompt';
@@ -107,7 +99,7 @@ p {
     background-color: #d8d8d8;
     color: #000;
     cursor: pointer;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     float: left;
     border: 0;
     border-radius: 20px;
@@ -122,13 +114,16 @@ p {
     transition: 0.5s;
 }
 .post {
+    max-width: 1080px;
+    margin: 0 auto;
     clear: both;
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     padding: 3rem 3rem;
+    align-content: center;
 }
 
 .post img {
@@ -155,6 +150,16 @@ p {
 }
 .post a h2 {
     font-size: 1.5rem;
+}
+@media only screen and (max-width: 1000px) {
+    .post {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .post {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media only screen and (max-width: 600px) {
     .post {
