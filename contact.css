@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: calc(60% + 0.8vmin);
+}
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 1.5rem;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.logo {
+
+}
+.search {
+    text-align: center;
+    font-size: 2rem;
+}
+.search input {
+    width: 60%;
+}
+.navbar ul {
+    float: right;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        text-align: center;
+    }
+    .menu ul{
+        float: none;
+        text-align: center;
+    }
+    .menu ul li {
+        margin: 2rem 1rem;
+    }
+    .menu ul li a {
+        text-align: center;
+    }
+}
+body{
+    background-color: #fff;
+    font-family: 'prompt';
+}
+h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+p {
+    font-weight: 100;
+}
+.contact {
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+.contact .content {
+    grid-column: span 6;
+}
+.contact .content a {
+    color: #000;
+}
+.contact .img {
+    grid-column: span 6;
+}
+.contact .img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+@media only screen and (max-width: 600px) {
+    .contact .content {
+        grid-column: span 12;
+        row-gap: 10%;
+    }
+    .contact .img {
+        margin-top: 10%;
+        grid-column: span 12;
+        width: 100%;
+    }
+}

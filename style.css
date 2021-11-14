@@ -7,72 +7,11 @@ html {
     scroll-behavior: smooth;
     font-size: calc(60% + 0.8vmin);
 }
-/*
-.navbar{
-    background-color: #fff;
-    color:#000;
-    width: 100%;
-    line-height: 5rem;
-    font-size: 1.5rem;
-    padding: 0 1rem;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    font-family: 'Prompt';
-}
-.navbar a{
-    text-decoration: none;
-    color: #000;
-}
-.navbar a.nav-logo{
-    float: left;
-    height: inherit;
-    line-height: inherit;
-    padding: 0 2rem;
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Prompt';
-    color:#000;
-    font-weight: bold;
-}
-.navbar ul li{
-    display: inline-block;
-}
-.navbar ul{
-    float: right;
-    list-style: none;
-    height: inherit;
-    line-height: inherit;
-}
-.navbar ul li a{
-    display: block;
-    text-align: center;
-    min-width: 120px;
-    padding: 0 30px;
-    transition: 0.5s;
-}
-.navbar ul li a:hover{
-    color: rgb(150, 150, 150);
-    transition: 0.5s;
-}
-@media only screen and (max-width: 480px) {
-    .navbar ul {
-        float: left;
-    }
-    .navbar ul li {
-        display: block;
-    }
-    .navbar ul li a {
-        text-align: left;
-    }
-}*/
 .navbar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1rem 2rem;
     align-items: center;
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .logo {
@@ -99,6 +38,7 @@ html {
 }
 @media only screen and (max-width: 900px) {
     .navbar {
+        padding: 1rem 1.5rem;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -128,18 +68,25 @@ h2{
     font-size: 3rem;
     font-weight: 500;
 }
+h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
 p {
     font-weight: 100;
 }
+
+
 .intro {
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 2% auto;
-    padding: 0 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
     grid-row-gap: 100px;
 }
 .intro .content{
+    grid-column: span 7;
     font-family: 'Prompt';
     color: #000;
     display: flex;
@@ -170,6 +117,7 @@ p {
     transition: 0.5s;
 }
 .intro .img {
+    grid-column: span 5;
     display: flex;
     justify-content: center;
 
@@ -181,31 +129,32 @@ p {
 @media only screen and (max-width: 1000px) {
     .intro {
         grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+
     }
     .intro .img {
         visibility: hidden;
         position: absolute;
     }
 }
-.its_process {
-    max-width: 1080px;
-    margin: 0 auto;
+.section-news {
     display: block;
-    padding: 2rem 1rem;
-    width: 100%;
-    
 }
-.its_process .content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 1.5rem 1.5rem;
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.news {
+    color: #fff;
+    border-radius: 12px;
     background-size: cover;
-    border-radius: 10px;
-    color: white;
+    grid-column: span 12;
+    padding: 1.5rem 1.5rem;
 }
-.its_process .btn{
+.news .btn{
     margin-top: 20px;
     background: #fff;
     cursor: pointer;
@@ -219,17 +168,65 @@ p {
     font-weight: 500;
     transition: 0.5s;
 }
-.its_process .btn:hover{
+.news .btn:hover{
     background-color: #000;
     color: #fff;
     transition: 0.5s;
 }
+@media only screen and (max-width: 600px) {
+    .news-grid {
+        padding: 0 1.5rem;
+    }
+}
+.section-instruction {
+    margin-top: 3%;
+    display: block;
+}
+.instruction-grid {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.instruction {
+    color: white ;
+    border-radius: 12px;
+    background-size: cover;
+    grid-column: span 12;
+    padding: 1.5rem 1.5rem;
+}
+.instruction .btn{
+    margin-top: 20px;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-family: 'Prompt';
+    font-weight: 500;
+    transition: 0.5s;
+}
+.instruction .btn:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 600px) {
+    .instruction-grid {
+        padding: 0 1.5rem;
+    }
+}
 /* Department Selector */
 .dep {
     display: block;
-    padding: 1rem 1rem;
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
+    margin-top: 5%;
 }
 .department {
     display: grid;
@@ -262,17 +259,23 @@ p {
     font-size: 2rem;
 }
 @media only screen and (max-width: 1000px) {
+    .dep {
+        padding: 0 1.5rem;
+    }
     .department {
         grid-template-columns: 1fr;
     }
 }
 .explore {
-    max-width: 1080px;
+    margin-top: 5%;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    padding: 1rem 1rem;
     display: block;
     font-family: 'Prompt';
+}
+.explore .header{
+    margin-top: 5%;
 }
 .sub_province {
     display: grid;
@@ -306,57 +309,149 @@ p {
     font-size: 1rem;
 }
 @media only screen and (max-width: 600px) {
+    .explore {
+        padding: 0 1.5rem;
+    }
     .sub_province {
         grid-template-columns: 1fr 1fr;
     }
 }
-footer{
-    background-color: #fff;
-    color:#000;
-    width: 100%;
-    line-height: 5rem;
-    height: 5rem;
-    font-size: 1rem;
-    padding: 0 2rem;
-    left: 0;
-    bottom: 0;
-    font-family: 'Prompt';
-    font-weight: 100;
+.section-footer-news {
+    padding: 3% 0;
+    background-color: #CFAC78;
+    margin-top: 10%;
 }
-footer a{
+.section-footer-news .header {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+}
+.section-footer-news .header .title {
+    grid-column: span 6;
+}
+.section-footer-news .header .btn {
+    grid-column: span 6;
+}
+.section-footer-news .header .btn button{
+    float: right;
+    margin-top: 20px;
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 20px;
+    font-family: 'Prompt';
+    font-weight: 500;
+    transition: 0.5s;
+}
+.section-footer-news .header .btn button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.footer-news-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-news {
+    grid-column: span 3;
+}
+.footer-news-grid a {
     text-decoration: none;
     color: #000;
 }
-footer ul li{
-    display: inline-block;
+.footer-news img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
 }
-footer ul{
+@media only screen and (max-width: 600px ) {
+    .section-footer-news {
+        padding: 0 1.5rem;
+    }
+    .section-footer-news .header .title {
+        grid-column: span 12;
+    }
+    .section-footer-news .header .btn {
+        grid-column: span 12;
+    }
+    .section-footer-news .header .btn button{
+        float: left;
+    }
+    .footer-news-grid {
+        margin-top: 16px;
+    }
+    .footer-news {
+        grid-column: span 6;
+    }
+}
+footer{
+    background-color: #0D1129;
+    width: 100%;
+    font-size: 1rem;
+    padding: 2rem 2rem;
+    left: 0;
+    bottom: 0;
+    font-family: 'Prompt';
+    font-weight: 100; 
+}
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer .grid .version {
+    grid-column: span 6;
+    color: #fff;
+}
+footer .grid .nav {
+    grid-column: span 6;
+}
+footer .grid .nav ul{
     float: right;
     list-style: none;
     height: inherit;
     line-height: inherit;
     padding: 0 0px;
 }
-footer ul li a{
+footer .grid .nav ul li{
+    display: inline-block;
+}
+footer .grid .nav ul li a{
+    text-decoration: none;
+    color: #fff;
     display: block;
     text-align: center;
     min-width: 2rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
     transition: 0.5s;
 }
-footer ul li a:hover{
+footer .grid .nav ul li a:hover{
     color: rgb(100, 100, 100);
     transition: 0.5s;
 }
 @media only screen and (max-width: 600px) {
-    footer a {
-        display: block;
+    footer .grid .version {
+        grid-column: span 12;
+        color: #fff;
+        text-align: center;
     }
-    footer ul {
-        float: left;
+    footer .grid .nav {
+        grid-column: span 12;
+        text-align: center;
     }
-    footer ul li a{
-        text-align: left;
+    footer .grid .nav ul {
+        float: none;
     }
 }
 #backToTop {

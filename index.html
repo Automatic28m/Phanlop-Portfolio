@@ -28,20 +28,13 @@
             <div class="menu">
                 <ul>
                     <li><a href="index.html">หน้าหลัก</a></li>
-                    <li><a href="index.html">เกี่ยวกับเรา</a></li>
-                    <li><a href="index.html">ติดต่อเรา</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--<nav id="top" class="navbar" data-aos="fade-down" data-aos-duration="2000" data-aos-anchor-placement="top-center">
-        <a href = "index.html" class = "nav-logo">TATC-ITS</a>
-        <ul>
-            <li><a href = "index.html">หน้าหลัก</a></li>
-            <li><a href = "#">เกี่ยวกับเรา</a></li>
-            <li><a href = "#">ติดต่อเรา</a></li>
-        </ul>
-    </nav>-->
+
     <container class="intro">
         <div class = "content" >
             <h1>เลือกการฝึกงานที่ใช่</h1>
@@ -60,16 +53,25 @@
             <img src = "img/img2.jpg">
         </div>
     </container>
+    <div class="section-news">
+        <div class="news-grid"">
+            <div class="news" style="background-image: url(img/manatthedesk.jpg);">
+                <h1>ข่าวสารประชาสัมพันธ์</h1>
+                <p>กดหนดการนิเทศนักศึกษาก่อนออกฝึกงาน</p>
+                <button href="#" class = "btn">เรียนรู้เพิ่มเติม</button>
+            </div>
+        </div>
+    </div>
     <!--ขั้นตอนการยื่นคำร้องขอออกฝึกงาน-->
-    <container class="its_process" id="its_process">
-        <div class = "content" style="background-image: url(img/meetingroom.jpg);">
-            <div>
+    <div class="section-instruction" id="instruction">
+        <div class="instruction-grid">
+            <div class="instruction" style="background-image: url(img/meetingroom.jpg)"> 
                 <h1>เรียนรู้แนวทางปฏิบัติ<br>ก่อนเลือกสถานที่ฝึกงาน</h1>
                 <p>เรียนรู้ขั้นตอน และรับฟังคำแนะนำจากวิดีโอที่เรามีให้</p>
                 <button href="#" class = "btn">เรียนรู้เพิ่มเติม</button>
             </div>
         </div>
-    </container>
+    </div>
     <!--เลือกสายงาน-->
     <container class="dep" >
         <div>
@@ -88,13 +90,15 @@
         </div>
     </container>
     <!--สำรวจพื้นที่ใกล้เคียง-->
-    <container class="explore" >
-        <h2>
-            สำรวจพื้นที่ใกล้เคียง
-        </h2>
-        <p>
-            เลือกแสดงสถานที่ตามอำเภอต่างๆ
-        </p>
+    <container class="explore">
+        <div class="header">
+            <h2>
+                สำรวจพื้นที่ใกล้เคียง
+            </h2>
+            <p>
+                เลือกแสดงสถานที่ตามอำเภอต่างๆ
+            </p>
+        </div>
         <div class="sub_province">
             <a href="sattahip.html">
                 <img src="img/sattahip.jpg">
@@ -139,13 +143,52 @@
             
         </div>
     </container>
+    <div class="section-footer-news">
+        <div class="header">
+            <div class="title">
+                <h2>ข่าวสารล่าสุด</h2>
+                <p>ติดตามข่าวสารล่าสุดได้ที่นี่</p>
+            </div>
+            <div class="btn">
+                <button>ชมข่าวสารทั้งหมด</button>
+            </div>
+        </div>
+        <div class="footer-news-grid">
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #4</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+        </div>
+    </div>
     <footer>
-        <a>Project version 1.0.1</a>
-        <ul>
-            <li><a href="#">ติดต่อเรา</a></li>
-            <li><a href="#">เกี่ยวกับเรา</a></li>
-            <li><a href="#">รายงานปัญหา</a></li>
-        </ul>
+        <div class="grid">
+            <div class="version">
+                <p>Project version 1.0.1</p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                    <li><a href="#">รายงานปัญหา</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <button id="backToTop" class="btn-btt" onclick="location.href='#top'" type="button">^</button>
 
