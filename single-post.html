@@ -16,70 +16,128 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <nav class = "navbar" data-aos="fade-down" data-aos-duration="2000" data-aos-anchor-placement="top-center">
-        <a href = "index.html" class = "nav-logo">TATC-ITS</a>
-        <ul>
-            <li><a href = "index.html">หน้าหลัก</a></li>
-            <li><a href = "#">เกี่ยวกับเรา</a></li>
-            <li><a href = "#">ติดต่อเรา</a></li>
-        </ul>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Internchip</h2>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="ค้นหา">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <container>
-        <div class="name">
-            <h2>ประดิษฐ์รับซ่อมคอม</h2>
-        </div>
-        <div class="top">
-            <img class="img" src="img/computerfixing.jpg">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.6082853433227!2d100.8943568150064!3d12.673669191051891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31028c0748c583db%3A0x8898217079e35d83!2zYWR2aWNlIOC4quC4seC4leC4q-C4teC4mg!5e0!3m2!1sen!2sth!4v1636035675605!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <h3 class="description">รับซ่อมคอมพิวเตอร์ ปริ้นเตอร์ อุปกรณ์ไอที ด้วยช่างมืออาชีพ ราคาถูก</h3>
-        <hr class="rounded">
-        <div class="content">
-            <div>
-                <p class="hours">เวลาทำการ 8.00 น. - 20.00 น.</p>
-                <p class="address">ที่ตั้ง MVFW+FJ7 ตำบล สัตหีบ อำเภอสัตหีบ ชลบุรี 20180</p>
-                <p class="contact">ช่องทางการติดต่อ โทร +6633082349</p>
-                <p><a href="https://www.facebook.com/advicesattahip/" class="online-contact">Facebook.com</a></p>
-                <hr class="rounded">
-                <p class="most-student">รับนักศึกษาฝึกงานสูงสุด 3 คน</p>
-                <p class="level">ระดับชั้น ปวช.</p>
-                <p class="system">ระบบ ปกติ</p>
-                <p class="dep">แผนก เทคโนโลยีคอมพิวเตอร์</p>
+        <div class="main">
+            <div class="graphic">
+                <div class="img">
+                    <img src="img/computerfixing.jpg">
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.6082853433227!2d100.8943568150064!3d12.673669191051891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31028c0748c583db%3A0x8898217079e35d83!2zYWR2aWNlIOC4quC4seC4leC4q-C4teC4mg!5e0!3m2!1sen!2sth!4v1636035675605!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <div>
-                <div class="student">
-                    <p>รายชื่อนักศึกษาที่เคยฝึกงาน</p>
-                    <p>นายพัลลภ บุญเหลือ ปีการศึกษา 2564</p>
-                    <p>นายมาร์ติน กองสังข์ ปีการศึกษา 2564</p>
+            <div class="name">
+                <h2>ประดิษฐ์รับซ่อมคอม</h2>
+            </div>
+            <h3 class="description">รับซ่อมคอมพิวเตอร์ ปริ้นเตอร์ อุปกรณ์ไอที ด้วยช่างมืออาชีพ ราคาถูก</h3>
+            <hr class="rounded">
+            <div class="content">
+                <div class="left-content">
+                    <p class="hours">เวลาทำการ 8.00 น. - 20.00 น.</p>
+                    <p class="address">ที่ตั้ง MVFW+FJ7 ตำบล สัตหีบ อำเภอสัตหีบ ชลบุรี 20180</p>
+                    <p class="contact">ช่องทางการติดต่อ โทร +6633082349</p>
+                    <p><a href="https://www.facebook.com/advicesattahip/" class="online-contact">Facebook.com</a></p>
                     <hr class="rounded">
-                    <p>คำแนะนำจากรุ่นพี่</p>
-                    <p>หากตั้งใจฝึกงานจะได้รับโบนัสเป็นพิเศษ</p>
+                    <p class="most-student">รับนักศึกษาฝึกงานสูงสุด 3 คน</p>
+                    <p class="level">ระดับชั้น ปวช.</p>
+                    <p class="system">ระบบ ปกติ</p>
+                    <p class="dep">แผนก เทคโนโลยีคอมพิวเตอร์</p>
+                </div>
+                <div class="right-content">
+                    <div class="student">
+                        <p>รายชื่อนักศึกษาที่เคยฝึกงาน</p>
+                        <p>นายพัลลภ บุญเหลือ ปีการศึกษา 2564</p>
+                        <p>นายมาร์ติน กองสังข์ ปีการศึกษา 2564</p>
+                        <hr class="rounded">
+                        <p>คำแนะนำจากรุ่นพี่</p>
+                        <p>หากตั้งใจฝึกงานจะได้รับโบนัสเป็นพิเศษ</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="sub-province">
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">พัทยา</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">บางละมุง</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">ศรีราชา</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">ชลบุรี</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">บ้านฉาง</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">ห้วยโป่ง</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">มาบตาพุด</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">มาบข่า</button></a>
-            <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">เนินพระ</button></a>
+        <div class="minor">
+            <div class="sub-province">
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">พัทยา</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">บางละมุง</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">ศรีราชา</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">ชลบุรี</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">บ้านฉาง</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">ห้วยโป่ง</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">มาบตาพุด</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">มาบข่า</button></a>
+                <button class="btn-sp" onclick="location.href='index.html'" type="btn" class="btn-sp">เนินพระ</button></a>
+            </div>
         </div>
     </container>
 
+    <div class="section-footer-news">
+        <div class="header">
+            <div class="title">
+                <h2>ข่าวสารล่าสุด</h2>
+                <p>ติดตามข่าวสารล่าสุดได้ที่นี่</p>
+            </div>
+            <div class="btn">
+                <button>ชมข่าวสารทั้งหมด</button>
+            </div>
+        </div>
+        <div class="footer-news-grid">
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #1</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+            <a href="#" class="footer-news">
+                <img src="img/graduate.jpg" alt="">
+                <h3>News #4</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat!</p>
+            </a>
+        </div>
+    </div>
     <footer>
-        <a>Thai-Austrian Technical College Internship Project</a>
-        <ul>
-            <li><a href="#">ติดต่อเรา</a></li>
-            <li><a href="#">เกี่ยวกับเรา</a></li>
-            <li><a href="#">รายงานปัญหา</a></li>
-        </ul>
+        <div class="grid">
+            <div class="version">
+                <p>Project version 1.0.1</p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                    <li><a href="#">รายงานปัญหา</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+    <button id="backToTop" class="btn-btt" onclick="location.href='#top'" type="button">Top</button>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
         AOS.init();
     </script>
