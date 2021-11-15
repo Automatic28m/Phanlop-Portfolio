@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/backtotop.css" rel="stylesheet">
+    <title>Backtotop</title>
+</head>
+<body>
+    <button id="backToTop" class="btn-btt" onclick="location.href='#top'" type="button">^</button>
+    <script>
+        //Back to stop button
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+
+        window.onscroll = function()
+        {
+            if(pageOffset >= 1000)
+            {
+                document.getElementById('backToTop').style.visibility="visible"
+            }else
+            {
+                document.getElementById('backToTop').style.visibility="hidden";
+            }
+        };
+    </script>
+</body>
+</html>

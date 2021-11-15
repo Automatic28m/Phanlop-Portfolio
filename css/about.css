@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: calc(60% + 0.8vmin);
+}
+body{
+    background-color: #fff;
+    font-family: 'prompt';
+}
+h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+p {
+    font-weight: 100;
+}
+.section-header {
+    margin-top: 8%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10rem 1.5rem;
+    background-color: rgb(238, 238, 238);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header {
+    grid-column: span 6;
+}
+.content {
+    grid-column: span 6;
+}
+@media only screen and (max-width: 600px) {
+    .header {
+        grid-column: span 12;
+    }
+    .content {
+        grid-column: span 12;
+    }
+}
+.section-founder {
+    margin-top: 8%;
+}
+header {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.founder-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1.5rem;
+}
+.founder {
+    grid-column: span 6;
+}
+.founder img {
+    object-fit: cover;
+    height: 532px;
+    border-radius: 12px;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .founder {
+        grid-column: span 12;
+    }
+    .founder img {
+        height: 337.22px;
+    }
+}
+.section-cause {
+    margin-top: 8%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(238, 238, 238);
+    padding: 10rem 1.5rem;
+}
+.section-record {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.record-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.record {
+    width: 100%;
+    grid-column: span 6;
+    align-self: center;
+}
+.record .number {
+    display: flex;
+}
+.record-img {
+    grid-column: span 6;
+}
+.record-img img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
+    height: 500px;
+}
+@media only screen and (max-width: 600px) {
+    .record {
+        grid-column: span 12;
+    }
+    .record-img {
+        grid-column: span 12;
+    }
+    .record-img img {
+        height: 308.91px;
+    }
+}
