@@ -57,14 +57,18 @@ nav {
 .navbar .social-media ul {
     float: right;
 }
+.navbar .social-media ul li {
+    display: inline-block;
+}
 .navbar .social-media ul li a {
     font-size: 1.5rem;
     margin-left: 0.5rem;
+    color: #1A374D;
 }
-.navbar ul li {
+.navbar .menu ul li {
     display: inline-block;
 }
-.navbar ul li a {
+.navbar .menu ul li a {
     color: #1A374D;
     text-decoration: none;
 }
@@ -240,6 +244,63 @@ nav {
     }
     .education .content {
         grid-column: span 12;
+    }
+}
+.internship {
+    background-color: #1A374D;
+    color: #fff;
+}
+.internship .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+}
+.internship .container .section {
+    grid-column: span 6;
+}
+.internship .header {
+    padding: 1rem 0;
+}
+.internship .content a {
+    color: #fff;
+}
+.internship .container img {
+    width: 40%;
+}
+.internship .example {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.internship .example .section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.internship .example .section p {
+
+}
+.internship .example .section img{
+    width: 100%;
+    border: 0.5rem solid white;
+}
+@media only screen and (max-width: 600px) {
+    .internship .container .section {
+        grid-column: span 12;
+    }
+    .internship .example {
+        flex-direction: column;
+    }
+    .internship .example .section {
+        width: 100%;
     }
 }
 .bio {
