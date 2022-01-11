@@ -123,10 +123,10 @@ nav {
     }
 }
 .contact {
-    background-color: #B1D0E0;
+    background-color: #1A374D;
 }
 .contact .container {
-    color: #1A374D;
+    color: #fff;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -146,13 +146,13 @@ nav {
 .contact .box {
     display: flex;
     gap: 16px;
-    color: #1A374D;
+    color: #fff;
 }
 .contact .box i {
     font-size: 1.5rem;
 }
 .contact .box a {   
-    color: #1A374D;
+    color: #fff;
 }
 @media only screen and (max-width: 600px) {
     .contact .header {
